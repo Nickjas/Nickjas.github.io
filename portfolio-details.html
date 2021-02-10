@@ -694,7 +694,6 @@
                 d3.csv("data/seattle.csv", d3.autoType).then(data => {
                     
                     const svg = d3.select("#mydiv2")
-                        .append("svg")
                         .attr("viewBox", `${-diameter / 2} ${-diameter / 2} ${diameter} ${diameter}`)
                         .style("width", diameter)
                         .style("height", diameter);
@@ -11508,7 +11507,7 @@ chart.cursor.events.on("cursorpositionchanged", function (event) {
        <form id="options" oninput="refresh()">
         Diameter: <input name="diameter" type="range" min="0" max="2048" value="640" />
     </form>
-      <div id="mydiv2"></div>
+      <svg id="mydiv2"></svg>
 
           <div class="portfolio-info">
             <h3>Project information</h3>
