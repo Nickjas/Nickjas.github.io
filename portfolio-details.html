@@ -10,6 +10,9 @@
   <script src="https://cdn.amcharts.com/lib/4/themes/kelly.js"></script>
   <script src="https://cdn.amcharts.com/lib/4/themes/dataviz.js"></script>
   <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="weatherwheel.js"></script>
+
   <title>Portfolio Details</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -79,6 +82,40 @@
   height: 500px;
 }
   </style>
+<script>
+        const icon = {
+            clear: "images/clear.svg",
+            cloudy: "images/cloudy.svg",
+            overcast: "images/overcast.svg",
+            rain: "images/rain.svg",
+            snow: "images/snow.svg"
+        }
+    </script>
+<script>
+        var t;
+        const refresh = () => {
+            const diameter = +options.diameter.value;
+            clearTimeout(t);
+            t = setTimeout(() => {
+                d3.csv("data/seattle.csv", d3.autoType).then(data => {
+                    
+                    const svg = d3.select("#mydiv2")
+                        .append("svg")
+                        .attr("viewBox", `${-diameter / 2} ${-diameter / 2} ${diameter} ${diameter}`)
+                        .style("width", diameter)
+                        .style("height", diameter);
+
+                    const wheel = new WeatherWheel(svg)
+                        .size([diameter, diameter])
+                        .icon(icon)
+                        .data(data)
+                        .render();
+                });
+            }, 50);
+        }
+
+        refresh();
+    </script>
 <script>
 am4core.ready(function() {
 
@@ -10873,6 +10910,9 @@ chart.cursor.events.on("cursorpositionchanged", function (event) {
         COVID-19 has changed our daily life and continues to do so. One such instance is the reopening of stor
           </p>
      <div class="portfolio-details-container">
+       <form id="options" oninput="refresh()">
+        Diameter: <input name="diameter" type="range" min="0" max="2048" value="640" />
+    </form>
       <div id="mydiv2"></div>
 
           <div class="portfolio-info">
