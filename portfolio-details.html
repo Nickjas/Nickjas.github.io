@@ -688,7 +688,8 @@
 <script>
         var t;
         const refresh = () => {
-            const diameter = +options.diameter.value;
+            const diameter = 500;
+                  
             clearTimeout(t);
             t = setTimeout(() => {
                 d3.csv("data/seattle.csv", d3.autoType).then(data => {
