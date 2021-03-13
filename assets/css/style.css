@@ -325,7 +325,10 @@ nav ul li a {
 #about {
   width: 100%;
   height: auto;
-  background: url("../img/bg1.jpg") repeat scroll center center/cover;
+  background: url("../img/bg1.jpg") url("../img/bg2.jpg") url("../img/bg3.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat repeat repeat ; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
   padding-top: 120px;
 }
 
@@ -360,8 +363,11 @@ nav ul li a {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background: url("../img/bg2.jpg") repeat scroll center center/cover;
-  background: #a6deda;
+  background: url("../img/bg4.jpg") url("../img/bg5.jpg") url("../img/bg6.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat repeat repeat ; /* Do not repeat the image */
+  background-size: cover;
+  /*background: #a6deda;*/
   position: relative;
   padding-bottom: 80px;
 }
