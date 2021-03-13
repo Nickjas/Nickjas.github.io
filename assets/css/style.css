@@ -325,10 +325,8 @@ nav ul li a {
 #about {
   width: 100%;
   height: auto;
-  background: url("../img/bg1.jpg") url("../img/bg2.jpg") url("../img/bg3.jpg");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat repeat repeat ; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background: url("../img/bg9.jpg") repeat scroll center center/cover; 
+  background: #cccccc; /* Resize the background image to cover the entire container */
   padding-top: 120px;
 }
 
@@ -363,11 +361,8 @@ nav ul li a {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background: url("../img/bg4.jpg") url("../img/bg5.jpg") url("../img/bg6.jpg");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat repeat repeat ; /* Do not repeat the image */
-  background-size: cover;
-  /*background: #a6deda;*/
+  background: url("../img/bg7.jpg") repeat scroll center center/cover;
+  background: #a6deda;
   position: relative;
   padding-bottom: 80px;
 }
@@ -434,7 +429,7 @@ nav ul li a {
 --------------------------------------------------------------*/
 #portfolio {
   /*background-color=#BFDEE0;*/
-  background: url("../img/bg5.jpg") repeat scroll center center/cover;
+  background: url("../img/bg11.jpg") repeat scroll center center/cover;
   background: #a6deda;
   position: relative;
   padding-bottom: 50px;
@@ -478,7 +473,7 @@ nav ul li a {
   opacity: 0;
   position: absolute;
   top: 10%;
-  width: 100%;
+  width: 80%;
   height: auto;
   bottom: 0;
   z-index: 3;
