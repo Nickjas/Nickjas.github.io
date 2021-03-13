@@ -325,7 +325,7 @@ nav ul li a {
 #about {
   width: 100%;
   height: auto;
-  background: url("../img/bg1.jpg");
+  background: url("../img/bg1.jpg") repeat scroll center center/cover;
   padding-top: 120px;
 }
 
@@ -360,7 +360,7 @@ nav ul li a {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background: url("../img/bg2.jpg");
+  background: url("../img/bg2.jpg") repeat scroll center center/cover;
   background: #a6deda;
   position: relative;
   padding-bottom: 80px;
@@ -428,7 +428,7 @@ nav ul li a {
 --------------------------------------------------------------*/
 #portfolio {
   /*background-color=#BFDEE0;*/
-  background: url("../img/bg5.jpg");
+  background: url("../img/bg5.jpg") repeat scroll center center/cover;
   background: #a6deda;
   position: relative;
   padding-bottom: 50px;
