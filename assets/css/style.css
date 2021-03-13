@@ -325,7 +325,7 @@ nav ul li a {
 #about {
   width: 100%;
   height: auto;
-  background: url("../img/bg9.jpg") repeat scroll center center/cover; 
+  background: url("../img/bg5.jpg") repeat scroll center center/cover; 
   /*background: #a6deda;  Resize the background image to cover the entire container */
   padding-top: 120px;
 }
@@ -355,6 +355,7 @@ nav ul li a {
   max-width: 80%;
   margin-bottom: 0;
   text-align: left;
+  color:#080808;
 }
 
 /*--------------------------------------------------------------
@@ -434,8 +435,8 @@ nav ul li a {
 --------------------------------------------------------------*/
 #portfolio {
   /*background-color=#BFDEE0;*/
-  background: url("../img/bg11.jpg") repeat scroll center center/cover;
-  background: #cccccc;
+  background: url("../img/bg4.jpg") repeat scroll center center/cover;
+  /*background: #cccccc;*/
   position: relative;
   padding-bottom: 50px;
 }
