@@ -326,7 +326,7 @@ nav ul li a {
   width: 100%;
   height: auto;
   background: url("../img/bg9.jpg") repeat scroll center center/cover; 
-  background: #a6deda; /* Resize the background image to cover the entire container */
+  /*background: #a6deda;  Resize the background image to cover the entire container */
   padding-top: 120px;
 }
 
@@ -362,7 +362,7 @@ nav ul li a {
 --------------------------------------------------------------*/
 #services {
   background: url("../img/bg7.jpg") repeat scroll center center/cover;
-  background: #a6deda;
+  /*background: #a6deda;*/
   position: relative;
   padding-bottom: 80px;
 }
@@ -381,7 +381,12 @@ nav ul li a {
   text-transform: uppercase;
   display: block;
 }
-
+.serv .separator {
+  margin: 0;
+  font-size: 18px;
+  line-height: 25px;
+  color:#080808;
+}
 .services-block .separator {
   margin: 0;
   font-size: 18px;
