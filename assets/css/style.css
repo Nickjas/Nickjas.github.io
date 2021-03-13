@@ -426,6 +426,7 @@ nav ul li a {
 # Portfolio
 --------------------------------------------------------------*/
 #portfolio {
+  background-color=#BFDEE0;
   position: relative;
   padding-bottom: 50px;
 }
