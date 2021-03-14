@@ -355,7 +355,7 @@ nav ul li a {
   max-width: 80%;
   margin-bottom: 0;
   text-align: left;
-  color:#080808;
+  color:#fff;
 }
 
 /*--------------------------------------------------------------
@@ -376,7 +376,7 @@ nav ul li a {
   margin: 10px 0;
   position: relative;
   font-size: 22px;
-  color: #292929;
+  color: #0881EA;
   letter-spacing: 0.1em;
   font-weight: 700;
   text-transform: uppercase;
