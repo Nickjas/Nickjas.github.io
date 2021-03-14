@@ -325,7 +325,7 @@ nav ul li a {
 #about {
   width: 100%;
   height: auto;
-  background: url("../img/bg7.jpg") repeat scroll center center/cover; 
+  background: url("../img/b1.jpg") repeat scroll center center/cover; 
   /*background: #a6deda;  Resize the background image to cover the entire container */
   padding-top: 120px;
 }
@@ -356,6 +356,7 @@ nav ul li a {
   margin-bottom: 0;
   text-align: left;
   color:#fff;
+  font-size:19px
 }
 
 /*--------------------------------------------------------------
